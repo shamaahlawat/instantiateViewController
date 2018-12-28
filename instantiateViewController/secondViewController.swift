@@ -8,8 +8,10 @@
 
 import Foundation
 
-public class ChatbotService {
+public class secondviewcontroller {
     
+    @IBAction func didbuttonclick(_ sender: Any) {
+    }
     public static func doSomething() -> String {
     return "do something for us"
  }
