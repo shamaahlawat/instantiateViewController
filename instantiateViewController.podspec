@@ -33,7 +33,9 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/shamaahlawat/instantiateViewController.git", :tag => "1.0.0" }
 
 
-  spec.source_files  = "instantiateViewController/**/*.{h,m}"
+#spec.source_files  = "instantiateViewController/**/*"
+  spec.source_files = 'instantiateViewController/**/*.{swift, storyboard}'
+   #spec.source_files  = "instantiateViewController/*"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
