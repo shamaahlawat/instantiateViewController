@@ -11,7 +11,7 @@
 		2637F5A521D5E29200E36D43 /* instantiateViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2637F5A421D5E29200E36D43 /* instantiateViewControllerTests.swift */; };
 		2637F5A721D5E29200E36D43 /* instantiateViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2637F59921D5E29200E36D43 /* instantiateViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2637F5B121D5E3E300E36D43 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2637F5B021D5E3E300E36D43 /* secondViewController.swift */; };
-		2637F5DB21D5EDBD00E36D43 /* secondviewcontroller.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2637F5DA21D5EDBD00E36D43 /* secondviewcontroller.storyboard */; };
+		2637F5DB21D5EDBD00E36D43 /* loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2637F5DA21D5EDBD00E36D43 /* loading.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +32,7 @@
 		2637F5A421D5E29200E36D43 /* instantiateViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instantiateViewControllerTests.swift; sourceTree = "<group>"; };
 		2637F5A621D5E29200E36D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2637F5B021D5E3E300E36D43 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
-		2637F5DA21D5EDBD00E36D43 /* secondviewcontroller.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = secondviewcontroller.storyboard; sourceTree = "<group>"; };
+		2637F5DA21D5EDBD00E36D43 /* loading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = loading.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 				2637F59921D5E29200E36D43 /* instantiateViewController.h */,
 				2637F59A21D5E29200E36D43 /* Info.plist */,
 				2637F5B021D5E3E300E36D43 /* secondViewController.swift */,
-				2637F5DA21D5EDBD00E36D43 /* secondviewcontroller.storyboard */,
+				2637F5DA21D5EDBD00E36D43 /* loading.storyboard */,
 			);
 			path = instantiateViewController;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2637F5DB21D5EDBD00E36D43 /* secondviewcontroller.storyboard in Resources */,
+				2637F5DB21D5EDBD00E36D43 /* loading.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
