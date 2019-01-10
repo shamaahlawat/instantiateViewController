@@ -13,27 +13,23 @@
         <!--New File-->
         <scene sceneID="g7h-GA-ABU">
             <objects>
-                <viewController storyboardIdentifier="newFile" id="O3k-UR-75O" customClass="newFile" customModule="instantiateViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="newFile" id="O3k-UR-75O" customClass="newFile" customModule="instantiateViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ren-nl-GhF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bA4-gJ-HTx">
-                                <rect key="frame" x="0.0" y="70" width="375" height="448"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bA4-gJ-HTx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaJ-nE-Z8N">
-                                <rect key="frame" x="199" y="585" width="176" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.35607874393463135" green="0.20643073320388794" blue="0.075144462287425995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Test Button">
-                                    <color key="titleColor" red="1" green="0.86405296249999997" blue="0.35760978139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bA4-gJ-HTx" firstAttribute="leading" secondItem="JhT-8h-edW" secondAttribute="leading" id="Iyq-Ws-FoZ"/>
+                            <constraint firstItem="bA4-gJ-HTx" firstAttribute="trailing" secondItem="JhT-8h-edW" secondAttribute="trailing" id="Qw5-em-nV4"/>
+                            <constraint firstItem="JhT-8h-edW" firstAttribute="bottom" secondItem="bA4-gJ-HTx" secondAttribute="bottom" id="gR6-wU-pRj"/>
+                            <constraint firstItem="bA4-gJ-HTx" firstAttribute="top" secondItem="JhT-8h-edW" secondAttribute="top" id="jxe-9Y-fWu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JhT-8h-edW"/>
                     </view>
                     <connections>
