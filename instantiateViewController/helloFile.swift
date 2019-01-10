@@ -10,8 +10,10 @@ import Foundation
 import UIKit
 
 class helloFile : UIViewController {
-    @IBOutlet internal var web: UIWebView!
-    
+//    @IBOutlet internal var web: UIWebView!
+//    
+//    @IBOutlet weak var helllllll: UIWebView!
+    @IBOutlet weak var web: UIWebView!
     override func viewDidLoad() {
         print("i am here")
         do

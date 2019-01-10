@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nPx-zI-JFD">
-                                <rect key="frame" x="0.0" y="83" width="375" height="495"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5qO-xb-qx9">
+                                <rect key="frame" x="0.0" y="96" width="387" height="420"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
@@ -28,12 +28,12 @@
                         <viewLayoutGuide key="safeArea" id="1jL-E4-IBN"/>
                     </view>
                     <connections>
-                        <outlet property="web" destination="nPx-zI-JFD" id="P3k-bC-eOn"/>
+                        <outlet property="web" destination="5qO-xb-qx9" id="CR0-f4-bTj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRL-OO-huM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="144.80000000000001" y="140.77961019490255"/>
+            <point key="canvasLocation" x="144.80000000000001" y="139.880059970015"/>
         </scene>
     </scenes>
 </document>
