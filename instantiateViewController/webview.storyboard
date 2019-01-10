@@ -10,35 +10,32 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Webview Controller-->
+        <!--New File-->
         <scene sceneID="fNI-gB-ozU">
             <objects>
-                <viewController storyboardIdentifier="webviewController" id="kDA-bl-eET" customClass="webviewController" customModule="instantiateViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="newFile" id="kDA-bl-eET" customClass="newFile" customModule="instantiateViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P1X-2n-9Mx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVD-5e-aaE">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PF2-ld-LgK">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="CVD-5e-aaE" firstAttribute="bottom" secondItem="yhj-du-nDi" secondAttribute="bottom" id="Cs1-aH-2Q5"/>
-                            <constraint firstItem="CVD-5e-aaE" firstAttribute="top" secondItem="yhj-du-nDi" secondAttribute="top" id="PLy-fb-uQb"/>
-                            <constraint firstItem="CVD-5e-aaE" firstAttribute="leading" secondItem="yhj-du-nDi" secondAttribute="leading" id="ZUf-xt-Oz4"/>
-                            <constraint firstItem="CVD-5e-aaE" firstAttribute="trailing" secondItem="yhj-du-nDi" secondAttribute="trailing" id="oFO-Aa-ToU"/>
+                            <constraint firstItem="PF2-ld-LgK" firstAttribute="top" secondItem="yhj-du-nDi" secondAttribute="top" id="1iY-1l-XjA"/>
+                            <constraint firstItem="PF2-ld-LgK" firstAttribute="trailing" secondItem="yhj-du-nDi" secondAttribute="trailing" id="7B1-dA-OAO"/>
+                            <constraint firstItem="yhj-du-nDi" firstAttribute="bottom" secondItem="PF2-ld-LgK" secondAttribute="bottom" id="PO4-MC-UIv"/>
+                            <constraint firstItem="PF2-ld-LgK" firstAttribute="leading" secondItem="yhj-du-nDi" secondAttribute="leading" id="m1T-Wf-7Tz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yhj-du-nDi"/>
                     </view>
-                    <connections>
-                        <outlet property="webview" destination="CVD-5e-aaE" id="dzO-LG-1YM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dxq-AT-AlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="596" y="131"/>
+            <point key="canvasLocation" x="596" y="130.88455772113943"/>
         </scene>
     </scenes>
 </document>
