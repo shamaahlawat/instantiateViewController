@@ -9,12 +9,13 @@
 import Foundation
 import UIKit
 
-class newFile: UIViewController {
+class newFile: UIViewController, UIWebViewDelegate {
     
     @IBOutlet var myWeb: UIWebView!
     @IBOutlet var Activity: UIActivityIndicatorView!
     
     override func viewDidLoad() {
+       myWeb.delegate = self //For mywebDidFinishLoad to be called
         print("In here")
         Activity.isHidden = false
         Activity.startAnimating()
@@ -28,15 +29,21 @@ class newFile: UIViewController {
         }
         catch
         {
-            
+            print("Not found")
         }
     }
     
-    @IBAction func ActionNew(_ sender: UIButton){
-        print("new")
-        Activity.isHidden = true
-        
+    func myWebDidStartLoad(myWeb : UIWebView) {
+        //UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        print("when webview starts loading")
+        Activity.startAnimating()
+    }
+    
+    func myWebDidFinishLoad(myWeb : UIWebView) {
+        //UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+        print("when webview finish loading")
         Activity.stopAnimating()
+        Activity.isHidden = true
     }
     
 }
