@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--New File-->
+        <!--Chatbot View Controller-->
         <scene sceneID="g7h-GA-ABU">
             <objects>
-                <viewController storyboardIdentifier="newFile" id="O3k-UR-75O" customClass="newFile" customModule="instantiateViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatbotViewController" id="O3k-UR-75O" customClass="ChatbotViewController" customModule="instantiateViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ren-nl-GhF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,7 @@
                     </view>
                     <connections>
                         <outlet property="Activity" destination="K5h-DK-jOw" id="Q1Q-GE-ioT"/>
-                        <outlet property="myWeb" destination="bA4-gJ-HTx" id="CrY-1f-Vjt"/>
+                        <outlet property="ChatbotWebview" destination="bA4-gJ-HTx" id="k9g-sj-fM1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMc-5b-qKk" userLabel="First Responder" sceneMemberID="firstResponder"/>

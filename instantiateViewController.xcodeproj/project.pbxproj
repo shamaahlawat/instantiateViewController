@@ -10,9 +10,9 @@
 		2637F5A021D5E29200E36D43 /* instantiateViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2637F59621D5E29200E36D43 /* instantiateViewController.framework */; };
 		2637F5A521D5E29200E36D43 /* instantiateViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2637F5A421D5E29200E36D43 /* instantiateViewControllerTests.swift */; };
 		2637F5A721D5E29200E36D43 /* instantiateViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2637F59921D5E29200E36D43 /* instantiateViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26FB936621E70A3A00626415 /* newFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB936521E70A3A00626415 /* newFile.swift */; };
+		26FB936621E70A3A00626415 /* ChatbotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB936521E70A3A00626415 /* ChatbotViewController.swift */; };
 		26FEEE8021DE16FE004F9D04 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 26FEEE7F21DE16FE004F9D04 /* index.html */; };
-		26FEEEEB21E37D20004F9D04 /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26FEEEEA21E37D20004F9D04 /* test.storyboard */; };
+		26FEEEEB21E37D20004F9D04 /* ChatbotWebview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26FEEEEA21E37D20004F9D04 /* ChatbotWebview.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +32,9 @@
 		2637F59F21D5E29200E36D43 /* instantiateViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = instantiateViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2637F5A421D5E29200E36D43 /* instantiateViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instantiateViewControllerTests.swift; sourceTree = "<group>"; };
 		2637F5A621D5E29200E36D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26FB936521E70A3A00626415 /* newFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newFile.swift; sourceTree = "<group>"; };
+		26FB936521E70A3A00626415 /* ChatbotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotViewController.swift; sourceTree = "<group>"; };
 		26FEEE7F21DE16FE004F9D04 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		26FEEEEA21E37D20004F9D04 /* test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
+		26FEEEEA21E37D20004F9D04 /* ChatbotWebview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatbotWebview.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +80,8 @@
 				26FEEE7F21DE16FE004F9D04 /* index.html */,
 				2637F59921D5E29200E36D43 /* instantiateViewController.h */,
 				2637F59A21D5E29200E36D43 /* Info.plist */,
-				26FEEEEA21E37D20004F9D04 /* test.storyboard */,
-				26FB936521E70A3A00626415 /* newFile.swift */,
+				26FEEEEA21E37D20004F9D04 /* ChatbotWebview.storyboard */,
+				26FB936521E70A3A00626415 /* ChatbotViewController.swift */,
 			);
 			path = instantiateViewController;
 			sourceTree = "<group>";
@@ -188,7 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26FEEE8021DE16FE004F9D04 /* index.html in Resources */,
-				26FEEEEB21E37D20004F9D04 /* test.storyboard in Resources */,
+				26FEEEEB21E37D20004F9D04 /* ChatbotWebview.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26FB936621E70A3A00626415 /* newFile.swift in Sources */,
+				26FB936621E70A3A00626415 /* ChatbotViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
