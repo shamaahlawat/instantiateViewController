@@ -1,11 +1,3 @@
-//
-//  newFile.swift
-//  instantiateViewController
-//
-//  Created by Shama Ahlawat on 10/01/19.
-//  Copyright © 2019 oriserve. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
@@ -44,6 +36,22 @@ class newFile: UIViewController, UIWebViewDelegate {
         print("when webview finish loading")
         Activity.stopAnimating()
         Activity.isHidden = true
+    }
+    
+    func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebView.NavigationType) -> Bool {
+        
+        return true
+    }
+    
+    //    func myWeb(myWeb: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebView.NavigationType) -> Bool {
+    ////        myWeb.stringByEvaluatingJavaScriptFromString("something = 42")
+    //        myWeb.stringByEvaluatingJavaScript(from: <#T##String#>)
+    //    }
+
+    
+    func myWeb(_myWeb: UIWebView, didFailLoadWithError error: Error)
+    {
+        print("failed to load")
     }
     
 }
