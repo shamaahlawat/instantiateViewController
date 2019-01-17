@@ -18,11 +18,42 @@ class ChatbotViewController: UIViewController, UIWebViewDelegate {
             let baseUrl = NSURL(fileURLWithPath: testHTML!) //for load css file
             
             ChatbotWebview.loadHTMLString(contents as String, baseURL: baseUrl as URL)
+            
+//            let htmlTitle = ChatbotWebview.stringByEvaluatingJavaScript(from: "document.title.innerHTML");
+//            print(htmlTitle)
+            //            if let returnedString = ChatbotWebview.stringByEvaluatingJavaScript(from: "") {
+            //                print("the result is \(returnedString)")
+            //  }
+//            webView.evaluateJavaScript("document.getElementById('someElement').innerText") { (result, error) in
+//                if error != nil {
+//                    print(result)
+//                }
+//            }
         }
         catch
         {
             print("Not found")
         }
+        
+        //            let jsInterface = NSXPCInterface()
+        //           ChatbotWebview.addJavascriptInterface(object: jsInterface, forKey: "Native")
+    }
+    
+    func webViewDidStartLoad(_ webView: UIWebView) {
+            print("when webview starts loading")
+            Activity.startAnimating()
+    }
+    
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        print("when webview finish loading")
+            Activity.stopAnimating()
+            Activity.isHidden = true
+          let htmlTitle = ChatbotWebview.stringByEvaluatingJavaScript(from: "document.title.innerHTML");
+        print(htmlTitle)
+    }
+    
+    func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
+        print("Error occured")
     }
     
 //    func myWebDidStartLoad(ChatbotWebview : UIWebView) {
