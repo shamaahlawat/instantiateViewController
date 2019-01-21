@@ -11,7 +11,6 @@
 		2637F5A521D5E29200E36D43 /* instantiateViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2637F5A421D5E29200E36D43 /* instantiateViewControllerTests.swift */; };
 		2637F5A721D5E29200E36D43 /* instantiateViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2637F59921D5E29200E36D43 /* instantiateViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26FB936621E70A3A00626415 /* ChatbotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB936521E70A3A00626415 /* ChatbotViewController.swift */; };
-		26FC770421F0758400627DB5 /* javascript.js in Resources */ = {isa = PBXBuildFile; fileRef = 26FC770321F0758400627DB5 /* javascript.js */; };
 		26FEEE8021DE16FE004F9D04 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 26FEEE7F21DE16FE004F9D04 /* index.html */; };
 		26FEEEEB21E37D20004F9D04 /* ChatbotWebview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26FEEEEA21E37D20004F9D04 /* ChatbotWebview.storyboard */; };
 /* End PBXBuildFile section */
@@ -34,7 +33,6 @@
 		2637F5A421D5E29200E36D43 /* instantiateViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instantiateViewControllerTests.swift; sourceTree = "<group>"; };
 		2637F5A621D5E29200E36D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26FB936521E70A3A00626415 /* ChatbotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotViewController.swift; sourceTree = "<group>"; };
-		26FC770321F0758400627DB5 /* javascript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = javascript.js; sourceTree = "<group>"; };
 		26FEEE7F21DE16FE004F9D04 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		26FEEEEA21E37D20004F9D04 /* ChatbotWebview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatbotWebview.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,7 +77,6 @@
 		2637F59821D5E29200E36D43 /* instantiateViewController */ = {
 			isa = PBXGroup;
 			children = (
-				26FC770321F0758400627DB5 /* javascript.js */,
 				26FEEE7F21DE16FE004F9D04 /* index.html */,
 				2637F59921D5E29200E36D43 /* instantiateViewController.h */,
 				2637F59A21D5E29200E36D43 /* Info.plist */,
@@ -192,7 +189,6 @@
 			files = (
 				26FEEE8021DE16FE004F9D04 /* index.html in Resources */,
 				26FEEEEB21E37D20004F9D04 /* ChatbotWebview.storyboard in Resources */,
-				26FC770421F0758400627DB5 /* javascript.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

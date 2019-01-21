@@ -52,20 +52,7 @@ class ChatbotViewController: UIViewController, UIWebViewDelegate {
             Activity.isHidden = true
         let htmlTitle = ChatbotWebview.stringByEvaluatingJavaScript(from: "window.pageYOffset;");
         print(htmlTitle)
-        
-        
-        //For external javascript file 
-        let filePath = Bundle.main.path(forResource: "javascript", ofType: "js")
-        //        print(filePath)
-        do {
-            let jsContent = try String.init(contentsOfFile: filePath!, encoding: String.Encoding.utf8)
-            print(jsContent)
-            ChatbotWebview.stringByEvaluatingJavaScript(from: jsContent)
-        }
-        catch let error as NSError{
-            print(error.debugDescription)
-        }
-        
+    
           injectJavaScriptFunction()
         
     }
