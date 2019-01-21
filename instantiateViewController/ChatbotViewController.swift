@@ -18,25 +18,27 @@ class ChatbotViewController: UIViewController, UIWebViewDelegate {
             let baseUrl = NSURL(fileURLWithPath: testHTML!) //for load css file
             
             ChatbotWebview.loadHTMLString(contents as String, baseURL: baseUrl as URL)
-            
-//            let htmlTitle = ChatbotWebview.stringByEvaluatingJavaScript(from: "document.title.innerHTML");
-//            print(htmlTitle)
-            //            if let returnedString = ChatbotWebview.stringByEvaluatingJavaScript(from: "") {
-            //                print("the result is \(returnedString)")
-            //  }
-//            webView.evaluateJavaScript("document.getElementById('someElement').innerText") { (result, error) in
-//                if error != nil {
-//                    print(result)
-//                }
-//            }
         }
         catch
         {
             print("Not found")
         }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super .viewWillDisappear(animated)
+            ChatbotWebview.stopLoading()
+            ChatbotWebview.removeFromSuperview()
+            ChatbotWebview = nil
         
-        //            let jsInterface = NSXPCInterface()
-        //           ChatbotWebview.addJavascriptInterface(object: jsInterface, forKey: "Native")
+            URLCache.shared.removeAllCachedResponses()
+            URLCache.shared.diskCapacity = 0
+            URLCache.shared.memoryCapacity = 0
+            if let cookies = HTTPCookieStorage.shared.cookies {
+                for cookie in cookies {
+                    HTTPCookieStorage.shared.deleteCookie(cookie)
+                }
+            }
     }
     
     func webViewDidStartLoad(_ webView: UIWebView) {
@@ -48,41 +50,36 @@ class ChatbotViewController: UIViewController, UIWebViewDelegate {
         print("when webview finish loading")
             Activity.stopAnimating()
             Activity.isHidden = true
-          let htmlTitle = ChatbotWebview.stringByEvaluatingJavaScript(from: "document.title.innerHTML");
+        let htmlTitle = ChatbotWebview.stringByEvaluatingJavaScript(from: "window.pageYOffset;");
         print(htmlTitle)
+        
+        
+        //For external javascript file 
+        let filePath = Bundle.main.path(forResource: "javascript", ofType: "js")
+        //        print(filePath)
+        do {
+            let jsContent = try String.init(contentsOfFile: filePath!, encoding: String.Encoding.utf8)
+            print(jsContent)
+            ChatbotWebview.stringByEvaluatingJavaScript(from: jsContent)
+        }
+        catch let error as NSError{
+            print(error.debugDescription)
+        }
+        
+          injectJavaScriptFunction()
+        
+    }
+    
+    private func injectJavaScriptFunction() {
+        print("injecting javascript")
+        
+        let obj = "{\"psid\": \"ori\"}"
+        
+        ChatbotWebview.stringByEvaluatingJavaScript(from: "window.androidObj.updateFromAndroid(\'android\',\'\');");
+        ChatbotWebview.stringByEvaluatingJavaScript(from :"window.androidObj.updateFromAndroid(\'psid\',\'"+obj+"\');");
     }
     
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
         print("Error occured")
     }
-    
-//    func myWebDidStartLoad(ChatbotWebview : UIWebView) {
-//        //UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-//        print("when webview starts loading")
-//        Activity.startAnimating()
-//    }
-    
-//    func myWebDidFinishLoad(ChatbotWebview : UIWebView) {
-//        //UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-//        print("when webview finish loading")
-//        Activity.stopAnimating()
-//        Activity.isHidden = true
-//    }
-//
-//    func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebView.NavigationType) -> Bool {
-//
-//        return true
-//    }
-    
-    //    func myWeb(myWeb: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebView.NavigationType) -> Bool {
-    ////        myWeb.stringByEvaluatingJavaScriptFromString("something = 42")
-    //        myWeb.stringByEvaluatingJavaScript(from: <#T##String#>)
-    //    }
-
-    
-//    func myWeb(_ChatbotWebview: UIWebView, didFailLoadWithError error: Error)
-//    {
-//        print("failed to load")
-//    }
-    
 }
